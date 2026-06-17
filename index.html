@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candela Barletti — Computer Science Student</title>
+<meta name="description" content="Portfolio of Candela Barletti — Computer Science student, data &amp; software">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ───────────────────────── NAV ───────────────────────── -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__mark">CB</a>
+  <div class="nav__links">
+    <a href="#proyectos">Projects</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#skills">Skills</a>
+    <a href="#experiencia">Experience</a>
+    <a href="#contacto" class="nav__cta">Contact</a>
+  </div>
+</nav>
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<header class="hero" id="top">
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Computer Science Student &amp; Builder</p>
+    <h1 class="hero__title">
+      Candela <span class="hero__title-accent">Barletti</span>
+    </h1>
+    <p class="hero__tagline">
+      I like turning ideas into things that work — whether that's a line of
+      code, a dataset, or a product people actually want to use. CS student
+      at FIU, currently exploring software, data, and everything in between.
+    </p>
+    <div class="hero__actions">
+      <a href="#proyectos" class="btn btn--primary">View projects</a>
+      <a href="assets/Candela_Barletti_Resume.pdf" class="btn btn--ghost" download>Download resume</a>
+    </div>
+    <div class="hero__social">
+      <a href="https://github.com/candelabarletti" target="_blank" rel="noopener">GitHub</a>
+      <span class="dot">·</span>
+      <a href="https://linkedin.com/in/candela-barletti-fiustudent" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="dot">·</span>
+      <a href="mailto:candelabarletti6@gmail.com">Email</a>
+    </div>
+  </div>
+  <svg class="hero__thread" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,140 C200,40 350,180 600,90 C850,10 1000,160 1200,70" />
+  </svg>
+</header>
+
+<main>
+
+  <!-- ───────────────────────── ABOUT STRIP ───────────────────────── -->
+  <section class="about">
+    <div class="about__grid">
+      <div class="stat">
+        <span class="stat__num">3.42</span>
+        <span class="stat__label">GPA · Honors College</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">3</span>
+        <span class="stat__label">Published analytics &amp; AI projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">2026</span>
+        <span class="stat__label">Graduating · FIU</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">ES/EN</span>
+        <span class="stat__label">Fluent bilingual</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── PROYECTOS ───────────────────────── -->
+  <section class="section" id="proyectos">
+    <div class="section__head">
+      <p class="section__eyebrow">Portfolio</p>
+      <h2 class="section__title">Projects</h2>
+      <p class="section__sub">A mix of data analysis and software builds — end to end, from raw data to working product.</p>
+    </div>
+
+    <div class="projects">
+
+      <article class="project-card">
+        <div class="project-card__tag">Marketing Analytics</div>
+        <h3 class="project-card__title">E-Commerce Customer Analytics</h3>
+        <p class="project-card__desc">
+          End-to-end customer analytics pipeline on a simulated online store:
+          RFM segmentation, Customer Lifetime Value estimation, and 10 SQL
+          queries answering real business questions.
+        </p>
+        <ul class="project-card__stack">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Pandas</li>
+          <li>Seaborn</li>
+        </ul>
+        <div class="project-card__metrics">
+          <div><span>500</span>customers</div>
+          <div><span>2,000</span>orders</div>
+          <div><span>6</span>RFM segments</div>
+        </div>
+        <a href="https://github.com/candelabarletti/ecommerce-customer-analytics" target="_blank" rel="noopener" class="project-card__link">
+          View repository <span class="arrow">→</span>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__tag">Retail &amp; Finance</div>
+        <h3 class="project-card__title">Retail Inventory &amp; Sales Performance</h3>
+        <p class="project-card__desc">
+          Financial and operational analysis of a 5-store retail chain:
+          FIFO inventory valuation, stock turnover, reorder alerts, and
+          a financial report exported to Excel.
+        </p>
+        <ul class="project-card__stack">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Excel</li>
+          <li>Plotly</li>
+        </ul>
+        <div class="project-card__metrics">
+          <div><span>21K+</span>transactions</div>
+          <div><span>5</span>stores</div>
+          <div><span>100</span>products</div>
+        </div>
+        <a href="https://github.com/candelabarletti/retail-inventory-analytics" target="_blank" rel="noopener" class="project-card__link">
+          View repository <span class="arrow">→</span>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__tag">AI Engineering</div>
+        <h3 class="project-card__title">Support Ticket Triage Agent</h3>
+        <p class="project-card__desc">
+          An AI agent that triages customer support tickets using
+          retrieval-augmented generation (RAG) and Claude tool-calling —
+          retrieving relevant policies, classifying urgency, and deciding
+          to auto-resolve or escalate to a human.
+        </p>
+        <ul class="project-card__stack">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>Claude API</li>
+          <li>RAG</li>
+        </ul>
+        <div class="project-card__metrics">
+          <div><span>90%</span>category accuracy</div>
+          <div><span>90%</span>decision accuracy</div>
+          <div><span>10</span>eval test cases</div>
+        </div>
+        <a href="https://github.com/candelabarletti/support-triage-agent" target="_blank" rel="noopener" class="project-card__link">
+          View repository <span class="arrow">→</span>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── CASE STUDIES ───────────────────────── -->
+  <section class="section section--alt" id="case-studies">
+    <div class="section__head">
+      <p class="section__eyebrow">Strategy &amp; Communication</p>
+      <h2 class="section__title">Case studies</h2>
+      <p class="section__sub">Business analysis and recommendations, presented the way a consulting deliverable would be.</p>
+    </div>
+
+    <div class="projects">
+
+      <article class="project-card">
+        <div class="project-card__tag">Business Case · AI ROI</div>
+        <h3 class="project-card__title">Should Meridian Retail Co. Adopt AI Support Automation?</h3>
+        <p class="project-card__desc">
+          A 10-slide business case evaluating whether a fictional retail
+          company should deploy an AI-powered support triage agent —
+          covering problem diagnosis, solution design, ROI modeling,
+          risk assessment, and a phased rollout plan.
+        </p>
+        <ul class="project-card__stack">
+          <li>Business Analysis</li>
+          <li>ROI Modeling</li>
+          <li>Risk Assessment</li>
+          <li>PowerPoint</li>
+        </ul>
+        <div class="project-card__metrics">
+          <div><span>4.1mo</span>payback period</div>
+          <div><span>$282K</span>projected savings</div>
+          <div><span>10</span>slides</div>
+        </div>
+        <a href="assets/Meridian_AI_Triage_Business_Case.pptx" download class="project-card__link">
+          Download deck <span class="arrow">→</span>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── SKILLS ───────────────────────── -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <p class="section__eyebrow">Tools</p>
+      <h2 class="section__title">Skills</h2>
+    </div>
+
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Languages</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">SQL</span>
+          <span class="chip">C / C++</span>
+          <span class="chip">Swift</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3>Data &amp; Visualization</h3>
+        <div class="chips">
+          <span class="chip">Pandas</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Plotly</span>
+          <span class="chip">Excel</span>
+          <span class="chip">BigQuery</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3>Software &amp; AI</h3>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">Streamlit</span>
+          <span class="chip">Vertex AI</span>
+          <span class="chip">Mobile Dev</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">HCI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── EXPERIENCIA ───────────────────────── -->
+  <section class="section" id="experiencia">
+    <div class="section__head">
+      <p class="section__eyebrow">Journey</p>
+      <h2 class="section__title">Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__date">Jan 2025 — Present</div>
+        <div class="timeline__content">
+          <h3>UX Specialist Agent</h3>
+          <p class="timeline__org">Yupix (Tech Startup) · Miami, FL</p>
+          <p>Testing VR/AR/AI applications, identifying bugs, and collaborating
+          with developers to validate features and drive product improvements.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__date">Jun 2025 — Dec 2025</div>
+        <div class="timeline__content">
+          <h3>M&amp;R Sales Distribution Intern</h3>
+          <p class="timeline__org">UnitedHealth Group · Miami, FL</p>
+          <p>Analyzed sales pipeline data across Medicare and retirement
+          products; built tracking tools to improve targeting strategies.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__date">Jan 2024 — Jun 2024</div>
+        <div class="timeline__content">
+          <h3>TechExchange Program</h3>
+          <p class="timeline__org">Google · Mountain View, CA / Remote</p>
+          <p>Built a Streamlit app using Vertex AI and BigQuery; received
+          mentorship from Google engineers on data structures and algorithms.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__date">May 2025 — Jun 2025</div>
+        <div class="timeline__content">
+          <h3>Competitor Research Analyst</h3>
+          <p class="timeline__org">Makeit MVP · Remote</p>
+          <p>Identified 100+ strategic partnerships and built tracking tools
+          that supported growth strategy.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__date">Aug 2021 — Present</div>
+        <div class="timeline__content">
+          <h3>President &amp; Founder</h3>
+          <p class="timeline__org">FIU Field Hockey Club · Miami, FL</p>
+          <p>Founded and grew the club from 0 to 30+ active players;
+          raised over $4,000 in fundraising events.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── CONTACTO ───────────────────────── -->
+  <section class="contact" id="contacto">
+    <div class="contact__inner">
+      <p class="section__eyebrow">Let's work together</p>
+      <h2 class="contact__title">Let's talk about your<br>next project</h2>
+      <p class="contact__sub">Always open to new opportunities in software, data, and product.</p>
+      <a href="mailto:candelabarletti6@gmail.com" class="btn btn--primary btn--large">
+        candelabarletti6@gmail.com
+      </a>
+      <div class="contact__links">
+        <a href="https://github.com/candelabarletti" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/candela-barletti-fiustudent" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="tel:7542139951">(754) 213-9951</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built with curiosity (and a little bit of pink). © 2026 Candela Barletti.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
