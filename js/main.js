@@ -1,34 +1,28 @@
-// Nav background on scroll
+document.documentElement.classList.add('js');
+
+// Nav: border on scroll
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 20);
-});
+const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 10);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
-// Scroll-reveal for sections
-const revealEls = document.querySelectorAll(
-  '.project-card, .skills__group, .timeline__item, .stat'
-);
-revealEls.forEach(el => el.classList.add('reveal'));
+// Breadcrumb: show the section currently in view
+const pageLabel = document.getElementById('navPage');
+const pages = document.querySelectorAll('[data-page]');
+const pageObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) pageLabel.textContent = entry.target.dataset.page;
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+pages.forEach((el) => pageObserver.observe(el));
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+// Reveal elements as they scroll into view
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
+      entry.target.classList.add('is-in');
+      revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
-revealEls.forEach(el => observer.observe(el));
-
-// Stagger reveal for grouped items
-const staggerGroups = [
-  document.querySelectorAll('.project-card'),
-  document.querySelectorAll('.timeline__item'),
-  document.querySelectorAll('.stat'),
-];
-staggerGroups.forEach(group => {
-  group.forEach((el, i) => {
-    el.style.transitionDelay = `${i * 90}ms`;
-  });
-});
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
